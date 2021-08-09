@@ -14,6 +14,7 @@ Steps to test yourself:
 4. On the first terminal input `python3 host.py`
 5. On the second terminal input `python3 client.py 127.0.0.1`
 6. Return to your first terminal window and you will now have terminal access to the "client" machine
+7. type in the command `exit` to close the session 
 
 Running client.py with argument of 127.0.0.1 will just give you access to the machine you are currently using.
 
