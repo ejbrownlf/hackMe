@@ -1,4 +1,4 @@
-# HackMe
+# Reverse Shell Connection
 
 This is a little project that plays with hacking methodology of reverse shells.
 
@@ -18,4 +18,4 @@ Steps to test yourself:
 
 Running client.py with argument of 127.0.0.1 will just give you access to the machine you are currently using.
 
-If you have more than one machine on your network you can input the private IPv4 Address to access it. You would run host.py on the "attacking machine" and client.py with the argument of the IP address of the attacker on the "victim" machine.
+If you have more than one machine on your network you can input the private IPv4 Address to access it. You would run host.py on the "host" machine and client.py with the argument of the IP address of the attacker on the "client" machine.
